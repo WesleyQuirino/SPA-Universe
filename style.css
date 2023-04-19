@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+    --font-weight-h1:700;
+    --font-weight-p:400;
+    --font-color-h1:hsla(240, 9%, 89%, 1);
+}
+body{
+    position: relative;
+    display: grid;
+    grid-template-rows: 12.2rem auto;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    color: var(--font-color-h1);
+    background-color: black;
+}
+
+.universe-bg{
+    background-image: url(assets/Universe.png);
+    height: 100vh;
+    background-position: bottom;
+    background-size: cover;
+}
+.explore-bg{
+    background-image: url(assets/Explore.png);
+    height: 100vh;
+    background-position: bottom;
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+    padding: 0 7.2rem;
+}
+header img{
+    height: 4.3rem;
+    width: 5rem;
+}
+header nav{
+    display: flex;
+    gap: 3.2rem;
+}
+header a{
+    text-decoration: none;
+    font-size: 2.4rem;
+    line-height: 2.2rem;
+    color: var(--font-color-h1);
+    opacity: 0.5;
+}
+header a:focus{
+    opacity: 1;
+}
+main{
+    display: grid;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    max-height: 100vh;
+    padding: 6.3rem 10.2rem;
+}
+h1{
+    font-weight: var(--font-weight-h1);
+    font-size: 4.8rem;
+    line-height: 6rem;
+}
+main img{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-position: bottom;
+    background-size: cover;
+}
+/* HOME */
+.home{
+    margin-top: 12%;
+    display: grid;
+    gap: 2.4rem;
+    place-content: center;
+    justify-items: center;
+}
+button{
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: var(--font-color-h1);
+
+    padding: 1.2rem 3.2rem;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px; 
+}
+button:focus{
+    background-color: white;
+    color: hsla(194, 97%, 31%, 1);
+}
+
+/* UNIVERSE */
+
+p{
+    margin-top: 2.4rem;
+    max-width: 648px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+}
+
+/* EXPLORE */
